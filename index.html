@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--for an icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>TO-DO LIST APP</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!--div for input text-->
+        <div class="input-text">
+            <i class="fa-solid fa-bars-staggered"></i>
+            <input type="text" placeholder="ADD A NEW TASK">
+        </div>
+        <div class="controls">
+            <!--div for all the headigs-->
+            <div class="headings">
+                <span id="all" class="active">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <!--button to clear the input text-->
+            <button class="clear-button">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+p{
+    color: white;
+}
+span{
+    color: white;
+}
+.settings i{
+    color: white;
+}
+.input-text i{
+    color: white;
+}
+.input-text input{
+    background-color:  #1a33e5;
+}
+.input-text input {
+    color: white;
+}
+body{
+    background:  #1a33e5;    
+}
+.wrapper{
+    background: black;
+    max-width: 450px;
+    margin: 100px auto;
+    border-radius: 8px;
+    padding: 28px 0;  
+}
+/* Style for icon and input-box*/
+.input-text{
+    height: 52px;
+    padding: 0 25px;
+    position: relative;
+}
+.input-text i{
+    position: absolute;
+    top: 50%;
+    transform: translate(17px, -50%);
+}
+.input-text input{
+    height: 100%;
+    width: 100%;
+    padding: 0 20px 0 53px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+.input-text input::placeholder{
+    color: white;
+
+}
+/*--------------style for heading and the button----------------------------------------*/
+.controls, li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 25px;
+    border-radius: 1px solid #ccc; 
+}
+.headings span{
+    margin: 0 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.headings span:first-child{
+    margin-left: 0;
+}
+.headings span.active{
+    color:  #1a33e5;
+}
+.controls .clear-button{
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #1a33e5;
+    padding: 7px 13px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+/*-----------------------Style for the task-list-------------------*/
+.task-box{
+    margin: 20px 25px;
+}
+.task-box .task{
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+
+}
+.task-box .task:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.task label{
+    display: flex;
+}
+.task label p.checked{
+    text-decoration: line-through;
+    color: gray;
+}
+.task label input{
+    margin-top: 2px;
+    margin-right: 12px;
+}
+.task-menu li{
+    color: white;
+}
+.task .settings{
+    cursor: pointer;
+    position: relative;
+}
+.settings .task-menu{
+    background: black;
+    padding: 5px 0;
+    right: -5px;
+    bottom: -65px;
+    z-index: 2;
+    transform: scale(0);
+    border-radius: 5px;
+    position: absolute;
+    transform-origin: top right;
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 6px white;
+}
+.task-menu li{
+    height: 25px;
+    font-size: 16px;
+    padding: 17px 15px;
+    margin-bottom: 2px;
+    justify-content: flex-start;
+}
+.task-menu li:last-child{
+    margin-bottom: 0;
+}
+.task-menu li:hover{
+    background:gray ;
+}
+.task-menu li i{
+    padding-right: 8px;
+}
+.settings .task-menu.show{
+    transform: scale(1);
+}
